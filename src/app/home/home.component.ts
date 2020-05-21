@@ -20,8 +20,9 @@ export class HomeComponent implements OnInit {
     private dataService: DataService
     ) { }
 
-  ngOnInit(): void {
-    this.channel('UCVyRiMvfUNMA1UP1DPzG5Ow')
+  ngOnInit() {
+    // UCVyRiMvfUNMA1UPlDPzG5Ow,UC29ju8bIPH5as8OGnQzwJyA,UCtb40EQj2inp8zuaQlLx3iQ,UCMn28O1sQGochG94HdlthbA,UCSJbGtTlrDami-tDGPUV9-w
+    this.channel('UCVyRiMvfUNMA1UPlDPzG5Ow')
   }
 
   minimizeWindow() {
