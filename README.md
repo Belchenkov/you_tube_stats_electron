@@ -4,6 +4,8 @@
 
 > Build a native desktop app that will pull YouTube channel info from an API with Angular 9 and Electron 8 (Typescript + SASS + Hot Reload) for creating Desktop applications.
 
+### [Release](https://github.com/Belchenkov/you_tube_stats_electron/releases/tag/master)
+
 Runs with:
 - Angular v9.1.4
 - Electron v8.2.5
