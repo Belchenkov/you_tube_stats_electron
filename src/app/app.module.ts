@@ -16,8 +16,11 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { HomeModule } from './home/home.module';
 import { DetailModule } from './detail/detail.module';
+import { DataService } from "./data.service";
+
 
 import { AppComponent } from './app.component';
+import {ElectronService} from "./core/services";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
@@ -43,7 +46,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
       }
     })
   ],
-  providers: [],
+  providers: [
+    ElectronService,
+    DataService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
